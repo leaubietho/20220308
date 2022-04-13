@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all {
+            width: 100%;
+            height: 800px;
+            background-color: pink;
+        }
+
+        .boxA {
+            width: 100%;
+            height: 25%;
+            width: calc(100% - 40px);
+            height: calc(25% - 40px);
+            /* padding: 50px 100px; */
+            background-color:pink;
+            border: 20px green solid;
+
+        }
+        .boxB {
+            width: 100%;
+            height: 50%;
+            background-color: bisque;
+        }
+        .boxB1 {
+            width: 50%;
+            height: 100%;
+            width: calc(50% - 40px);
+            height: calc(100% - 40px);
+            background-color: bisque;
+            border: 20px red solid;
+            float: left;
+            
+        }
+        .boxB2 {
+            width: 50%;
+            height: 100%;
+            width: calc(50% - 40px);
+            height: calc(100% - 40px);
+            background-color: rgb(175, 174, 224);
+            border: 20px blue solid;
+            float: right;
+        }
+        .boxC {
+            width: 100%;
+            height: 25%;
+            background-color: rgb(179, 168, 19);
+            width: calc(100% - 40px);
+            height: calc(25% - 40px);
+            border: 20px green solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- 巢狀結構 -->
+    <!-- 父層 -->
+    <div class="all">
+        <!--子層 -->
+        <div class="boxA">A</div>
+        <div class="boxB">
+            <div class="boxB1">B1</div>
+            <div class="boxB2">B2</div>
+        </div>
+        <div class="boxC">C</div>
+    </div>
+
+</body>
+</html>
